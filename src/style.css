@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;800;900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Cairo", sans-serif;
+}
+
+:root {
+  --swiper-theme-color: green;
+}
+
+.header {
+  @apply container pt-4 mx-auto max-md:px-2.5;
+
+  & .banner {
+    @apply flex items-center flex-wrap justify-between max-md:gap-y-1 max-md:justify-center max-md:text-sm;
+
+    & .banner-info {
+      @apply flex items-center gap-x-2.5 md:gap-x-4;
+    }
+
+    & .lang {
+      @apply bg-green-800 hover:bg-green-600 duration-300 text-white px-1.5 py-0.5 md:px-2.5 md:py-1 rounded-lg inline-block;
+    }
+
+    & .currency {
+      @apply font-medium;
+    }
+
+    & .info-phone,
+    .info-email {
+      @apply flex items-center gap-x-1 md:gap-x-1.5 hover:text-green-600 font-medium duration-300;
+    }
+
+    & .wishlist {
+      @apply flex items-center gap-x-1.5 hover:text-green-600 font-medium duration-300 text-nowrap;
+    }
+  }
+
+  & .navigation {
+    @apply relative flex items-center justify-between pt-1 md:pt-4;
+
+    & .logo {
+      @apply h-20;
+    }
+
+    & .links {
+      @apply flex items-center justify-between gap-x-5 text-lg font-semibold text-gray-800 max-md:hidden;
+
+      & li {
+        @apply duration-300 hover:text-green-800;
+      }
+    }
+
+    & .links.mobile {
+      @apply absolute start-0 end-0 top-20 bg-white p-4 z-50 rounded-b-lg flex flex-col items-center justify-center gap-y-4;
+    }
+
+    & .bars {
+      @apply md:hidden;
+    }
+
+    & .cart {
+      @apply relative;
+
+      &:hover {
+        & .cart-box {
+          @apply block;
+        }
+      }
+
+      & .cart-button {
+        @apply cursor-pointer;
+
+        & .cart-count {
+          @apply absolute bg-green-700 text-white rounded-[9000px] px-1.5 -top-2.5 -start-2.5 text-sm;
+        }
+      }
+
+      & .cart-box {
+        @apply absolute top-8 md:top-6 -end-8 md:end-4 rounded-lg border-2 border-green-200 p-5 bg-white min-w-xs z-50 hidden;
+
+        & .cart-list {
+          @apply divide-y divide-green-500;
+
+          & .cart-item {
+            @apply flex items-center gap-x-4 py-2;
+
+            & .cart-item-image {
+              @apply object-contain h-16;
+            }
+
+            & .cart-item-title {
+              @apply text-lg font-semibold;
+            }
+
+            & .cart-item-price {
+              @apply text-gray-500;
+            }
+          }
+        }
+
+        & .cart-link {
+          @apply block mt-4 text-xl bg-green-600 duration-300 hover:bg-green-500 px-4 py-2 rounded-lg text-white mx-auto text-center;
+        }
+      }
+    }
+  }
+}
+
+.slider {
+  & .slider-item {
+    @apply flex items-center justify-baseline h-[85vh] bg-cover bg-center;
+
+    & .slider-info {
+      @apply container mx-auto max-md:ps-6;
+
+      & .slider-info-title {
+        @apply text-4xl md:text-5xl font-bold mb-4;
+      }
+
+      & .slider-info-desciption {
+        @apply leading-relaxed max-w-sm max-md:pe-6 max-md:font-medium md:max-w-xl text-lg mt-10;
+      }
+
+      & .slider-button {
+        @apply px-6 py-3 text-lg rounded-lg bg-green-600 text-white mt-8 inline-block hover:bg-green-500 duration-300;
+      }
+    }
+  }
+}
