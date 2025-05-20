@@ -3,9 +3,11 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Spices</title>
+  <title>Spices - Home</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
   <link rel="stylesheet" href="/FontAwesome/FontAwesome.min.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
@@ -24,7 +26,7 @@
         </div>
         <div class="info-email">
           <i class="fa-regular fa-envelope fa-lg"></i>
-          <h2><a href="mailto:exmple@info.com">exmple@info.com</a></h2>
+          <h2><a href="mailto:exmple@info.com">ZY1YOGi@gmail.com</a></h2>
         </div>
       </div>
       <a href="#" class="wishlist" data-aos="fade-right">
@@ -36,10 +38,10 @@
       <img src="https://logopond.com/logos/7cccff545e71c78aa1f26865c1c574ee.png" class="logo" alt="log" />
 
       <ul class="links">
-        <li><a href="#">الصفحة الرئيسية</a></li>
-        <li><a href="#">معلومات عنا</a></li>
-        <li><a href="#">المنتجات</a></li>
-        <li><a href="#">تواصل معنا</a></li>
+        <li class="active"><a href="/">الصفحة الرئيسية</a></li>
+        <li><a href="./about-us.html">معلومات عنا</a></li>
+        <li><a href="./products.html">المنتجات</a></li>
+        <li><a href="./contact-us.html">تواصل معنا</a></li>
       </ul>
 
       <div class="cart">
@@ -115,9 +117,9 @@
 
 
 
-  <section class="pt-12 bg-cover bg-center max-md:px-4" style="background-image: url('https://img.freepik.com/free-photo/vivid-blurred-colorful-wallpaper-background_58702-3508.jpg');">
+  <section class="pt-12 max-md:px-4">
     <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="flex flex-col items-center rounded-lg bg-green-800 text-white py-6">
+      <div class="flex flex-col items-center rounded-lg bg-indigo-800 text-white py-6">
         <div><i class="fa-regular fa-stars fa-3x"></i></div>
         <h4 class="text-xl font-semibold py-2">التميز</h4>
         <p class="text-center">
@@ -126,7 +128,7 @@
         </p>
       </div>
 
-      <div class="flex flex-col items-center rounded-lg bg-green-800 text-white py-6">
+      <div class="flex flex-col items-center rounded-lg bg-indigo-800 text-white py-6">
         <div><i class="fa-regular fa-stars fa-3x"></i></div>
         <h4 class="text-xl font-semibold py-2">نكهات طبيعية</h4>
         <p class="text-center">
@@ -135,7 +137,7 @@
         </p>
       </div>
 
-      <div class="flex flex-col items-center rounded-lg bg-green-800 text-white py-6">
+      <div class="flex flex-col items-center rounded-lg bg-indigo-800 text-white py-6">
         <div><i class="fa-regular fa-stars fa-3x"></i></div>
         <h4 class="text-xl font-semibold py-2">تعبئة مميزة</h4>
         <p class="text-center">
@@ -144,53 +146,53 @@
         </p>
       </div>
     </div>
+  </section>
 
+
+  <section class="slider-tranding-products swiper">
+    <div class="slider-tranding-products-header">
+      <h2>المنتجات الرائجة</h2>
+      <p>عروض من افضل المنتجات المختارة لدينا من قبل العملاء</p>
+    </div>
+
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="/images/product-2.png" alt="log" />
+        <h2 class="bg-amber-600">كمون مسحوق</h2>
+        <span>من اجود انواع الشطة مسحوق شديد الشطشطة</span>
+        <span>جنية ؟؟؟</span>
+      </div>
+      <div class="swiper-slide">
+        <img src="/images/product-1.png" alt="log" />
+        <h2 class="bg-red-600">شطة بودر</h2>
+        <span>من اجود انواع الشطة مسحوق شديد الشطشطة</span>
+        <span>جنية ؟؟؟</span>
+      </div>
+      <div class="swiper-slide">
+        <img src="/images/product-2.png" alt="log" />
+        <h2 class="bg-amber-600">كمون مسحوق</h2>
+        <span>من اجود انواع الشطة مسحوق شديد الشطشطة</span>
+        <span>جنية ؟؟؟</span>
+      </div>
+      <div class="swiper-slide">
+        <img src="/images/product-3.png" alt="log" />
+        <h2 class="bg-zinc-700">فلفل اسود</h2>
+        <span>من اجود انواع الشطة مسحوق شديد الشطشطة</span>
+        <span>جنية ؟؟؟</span>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
   </section>
 
 
   <section class="mt-12 p-4">
-    <div class="text-center">
-      <h2 class="text-5xl font-semibold mb-4">المنتجات الرائجة</h2>
-      <p class="text-lg">عروض من افضل المنتجات المختارة لدينا من قبل العملاء</p>
-    </div>
-
-    <div class="slider-tranding-products container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-12 max-md:px-3">
-      <div class="flex flex-col items-center border border-green-500 rounded-lg pb-2 text-center overflow-hidden">
-        <img src="/images/product-2.png" class="w-xs h-[320px] object-contain hover:scale-110 duration-300" alt="log" />
-        <h2 class="font-semibold text-2xl px-4 py-1 bg-amber-600 rounded-lg text-white">كمون مسحوق</h2>
-        <span class="text-lg text-gray-800 font-bold mt-2">من اجود انواع الشطة مسحوق شديد الشطشطة</span>
-        <span class="text-lg text-gray-800 font-bold mt-2">جنية 99</span>
-      </div>
-      <div class="flex flex-col items-center border border-green-500 rounded-lg pb-2 text-center overflow-hidden">
-        <img src="/images/product-1.png" class="w-xs h-[320px] object-contain hover:scale-110 duration-300" alt="log" />
-        <h2 class="font-semibold text-2xl px-4 py-1 bg-red-600 rounded-lg text-white">شطة بودر</h2>
-        <span class="text-lg text-gray-800 font-bold mt-2">من اجود انواع الشطة مسحوق شديد الشطشطة</span>
-        <span class="text-lg text-gray-800 font-bold mt-2">جنية 50</span>
-      </div>
-      <div class="flex flex-col items-center border border-green-500 rounded-lg pb-2 text-center overflow-hidden">
-        <img src="/images/product-2.png" class="w-xs h-[320px] object-contain hover:scale-110 duration-300" alt="log" />
-        <h2 class="font-semibold text-2xl px-4 py-1 bg-amber-600 rounded-lg text-white">كمون مسحوق</h2>
-        <span class="text-lg text-gray-800 font-bold mt-2">من اجود انواع الشطة مسحوق شديد الشطشطة</span>
-        <span class="text-lg text-gray-800 font-bold mt-2">جنية 99</span>
-      </div>
-      <div class="flex flex-col items-center border border-green-500 rounded-lg pb-2 text-center overflow-hidden">
-        <img src="/images/product-3.png" class="w-xs h-[320px] object-contain hover:scale-110 duration-300" alt="log" />
-        <h2 class="font-semibold text-2xl px-4 py-1 bg-red-600 rounded-lg text-white">فلفل اسود</h2>
-        <span class="text-lg text-gray-800 font-bold mt-2">من اجود انواع الشطة مسحوق شديد الشطشطة</span>
-        <span class="text-lg text-gray-800 font-bold mt-2">جنية 50</span>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="mt-12 p-4 bg-cover bg-center" style="background-image: url('https://v3.tailwindcss.com/_next/static/media/docs@tinypng.d9e4dcdc.png');">
-    <div class="flex items-center justify-center gap-12 container mx-auto ">
+    <div class="flex items-center max-md:flex-col justify-center gap-12 container mx-auto ">
       <div class="relative">
         <img src="https://www.green3ataba.com/wp-content/uploads/2024/01/%D8%B7%D9%82%D9%85-%D8%AA%D9%88%D8%A7%D8%A8%D9%84-%D8%A7%D9%83%D9%84%D9%8A%D8%B1%D9%8A%D9%83-%D8%B4%D9%81%D8%A7%D9%81-4-%D9%82%D8%B7%D8%B9-%D8%A8%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D9%84%D9%82-%D9%84%D9%84%D8%AD%D9%81%D8%A7%D8%B8-%D8%B9%D9%84%D9%8A%D9%87%D8%A7_All_1073_8.jpeg" alt="log" class="rounded-lg w-xl object-contain">
         <div class="absolute bottom-0 start-0 p-5">
           <h5 class="text-3xl text-white bg-red-700 px-6 rounded-lg inline font-bold">توابل تثق به</h5>
           <p class="my-4 text-xl text-white">جودة لا توصف و تثق به يمكنك الاعتماد عالينا دوما في تلبية كل الكميات المطلوبة</p>
-          <a href="#" class="px-4 py-1  bg-green-700 hover:bg-green-500 rounded-lg inline-block text-white">عرض المنتجات</a>
+          <a href="#" class="px-4 py-1  bg-indigo-700 hover:bg-indigo-500 rounded-lg inline-block text-white">عرض المنتجات</a>
         </div>
       </div>
       <div class="relative">
@@ -198,76 +200,72 @@
         <div class="absolute top-0 start-0 p-5">
           <h5 class="text-xl text-white bg-gray-700 px-6 rounded-lg inline font-bold">مجموعة كبيرة من التوابل</h5>
           <p class="my-4 text-xl text-white">جودة لا توصف و تثق به يمكنك الاعتماد عالينا دوما في تلبية كل الكميات المطلوبة</p>
-          <a href="#" class="px-4 py-1  bg-green-700 hover:bg-green-500 rounded-lg inline-block text-white">توصل معنا</a>
+          <a href="#" class="px-4 py-1  bg-indigo-700 hover:bg-indigo-500 rounded-lg inline-block text-white">توصل معنا</a>
         </div>
       </div>
     </div>
   </section>
 
 
-  <section class="container mx-auto my-12">
-    <div class="text-center">
-      <h2 class="text-5xl font-semibold mb-4">منتجاتنا</h2>
-      <p class="text-lg leading-relaxed max-w-2xl mx-auto">
+  <section class="products">
+    <div class="products-header">
+      <h2>منتجاتنا</h2>
+      <p>
         اكتشفوا تشكيلتنا المختارة بعناية من أفضل المنتجات التي نعتز بتقديمها لكم
       </p>
     </div>
 
-    <div class="slider-products container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-12 max-md:px-3">
-      <div class="flex flex-col items-center border border-green-500 rounded-lg pb-2 text-center overflow-hidden">
-        <img src="/images/product-2.png" class="w-xs h-[320px] object-contain hover:scale-110 duration-300" alt="log" />
-        <h2 class="font-semibold text-2xl px-4 py-1 bg-amber-600 rounded-lg text-white">كمون مسحوق</h2>
-        <span class="text-lg text-gray-800 font-bold mt-2">من اجود انواع الشطة مسحوق شديد الشطشطة</span>
-        <span class="text-lg text-gray-800 font-bold mt-2">جنية 99</span>
+    <div class="products-list">
+      <div class="products-item">
+        <img src="/images/product-2.png" alt="log" />
+        <h2 class="bg-amber-600">كمون مسحوق</h2>
+        <span>من اجود انواع الشطة مسحوق شديد الشطشطة</span>
+        <span>جنية 99</span>
       </div>
-      <div class="flex flex-col items-center border border-green-500 rounded-lg pb-2 text-center overflow-hidden">
-        <img src="/images/product-1.png" class="w-xs h-[320px] object-contain hover:scale-110 duration-300" alt="log" />
-        <h2 class="font-semibold text-2xl px-4 py-1 bg-red-600 rounded-lg text-white">شطة بودر</h2>
-        <span class="text-lg text-gray-800 font-bold mt-2">من اجود انواع الشطة مسحوق شديد الشطشطة</span>
-        <span class="text-lg text-gray-800 font-bold mt-2">جنية 50</span>
+      <div class="products-item">
+        <img src="/images/product-1.png" alt="log" />
+        <h2 class="bg-red-600">شطة بودر</h2>
+        <span>من اجود انواع الشطة مسحوق شديد الشطشطة</span>
+        <span>جنية 50</span>
       </div>
-      <div class="flex flex-col items-center border border-green-500 rounded-lg pb-2 text-center overflow-hidden">
-        <img src="/images/product-2.png" class="w-xs h-[320px] object-contain hover:scale-110 duration-300" alt="log" />
-        <h2 class="font-semibold text-2xl px-4 py-1 bg-amber-600 rounded-lg text-white">كمون مسحوق</h2>
-        <span class="text-lg text-gray-800 font-bold mt-2">من اجود انواع الشطة مسحوق شديد الشطشطة</span>
-        <span class="text-lg text-gray-800 font-bold mt-2">جنية 99</span>
+      <div class="products-item">
+        <img src="/images/product-2.png" alt="log" />
+        <h2 class="bg-amber-600">كمون مسحوق</h2>
+        <span>من اجود انواع الشطة مسحوق شديد الشطشطة</span>
+        <span>جنية 99</span>
       </div>
-      <div class="flex flex-col items-center border border-green-500 rounded-lg pb-2 text-center overflow-hidden">
-        <img src="/images/product-3.png" class="w-xs h-[320px] object-contain hover:scale-110 duration-300" alt="log" />
-        <h2 class="font-semibold text-2xl px-4 py-1 bg-red-600 rounded-lg text-white">فلفل اسود</h2>
-        <span class="text-lg text-gray-800 font-bold mt-2">من اجود انواع الشطة مسحوق شديد الشطشطة</span>
-        <span class="text-lg text-gray-800 font-bold mt-2">جنية 50</span>
+      <div class="products-item">
+        <img src="/images/product-3.png" alt="log" />
+        <h2 class="bg-red-600">فلفل اسود</h2>
+        <span>من اجود انواع الشطة مسحوق شديد الشطشطة</span>
+        <span>جنية 50</span>
       </div>
     </div>
   </section>
 
 
-
-
-
-  <footer class="rounded-lg shadow-sm m-4">
-    <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-      <div class="flex max-md:flex-col items-center justify-between">
-        <a href="#" class="flex items-center mb-4 space-x-3">
-          <img src="https://logopond.com/logos/7cccff545e71c78aa1f26865c1c574ee.png" class="h-20" alt="log" />
+  <footer class="footer">
+    <div class="footer-wrapper">
+      <div class="footer-links">
+        <a href="/" class="footer-logo">
+          <img src="https://logopond.com/logos/7cccff545e71c78aa1f26865c1c574ee.png" alt="log" />
         </a>
-        <ul class="flex flex-wrap items-center text-sm font-medium text-gray-600">
+        <ul class="footer-links-list">
           <li>
-            <a href="#" class="hover:underline me-4 md:me-6">معلومات عنا</a>
+            <a href="about-us.html">معلومات عنا</a>
           </li>
           <li>
-            <a href="#" class="hover:underline me-4 md:me-6">المنتجات</a>
+            <a href="products.html">المنتجات</a>
           </li>
           <li>
-            <a href="#" class="hover:underline me-4 md:me-6">تواصل معنا</a>
+            <a href="contact-us.html">تواصل معنا</a>
           </li>
         </ul>
       </div>
-      <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
-      <span class="block text-sm text-gray-600 text-center">© 2025 <a href="#" class="hover:underline">Spices</a>. All Rights Reserved.</span>
+      <hr class="footer-hr" />
+      <span class="footer-copyright">© 2025 <a href="#" class="hover:underline">Spices</a>. All Rights Reserved.</span>
     </div>
   </footer>
-
 
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -275,7 +273,7 @@
   <script>AOS.init()</script>
 
   <script>
-    const swiper = new Swiper('.slider', {
+    new Swiper('.slider', {
       loop: true,
       autoplay: {
         delay: 1750,
@@ -284,15 +282,39 @@
       slidesPerView: 1,
       pagination: {
         el: '.swiper-pagination',
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
+      }
     });
+
+    new Swiper('.slider-tranding-products', {
+      loop: true,
+      spaceBetween: 10,
+      autoplay: {
+        delay: 1000,
+        disableOnInteraction: false
+      },
+      slidesPerView: 1,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 15,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        }
+      }
+    });
+
   </script>
 
-  <script type="module" src="/src/main.ts"></script>
+  <script type="module" src="./main.ts"></script>
 </body>
 
 </html>
